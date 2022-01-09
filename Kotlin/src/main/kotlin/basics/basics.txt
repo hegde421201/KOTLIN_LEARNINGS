@@ -1,0 +1,62 @@
+1) Comments
+a) Single-line comments
+b) Multi-Line comments
+c) Nested comments
+
+
+2) println statement
+
+3) Arithmetic operators
+----------------------
+a) Math operators and expressions
+b) Decimals and integers
+c) Modulo operator
+d) format specifier
+e) Operator precedence
+
+4) Math operators
+----------------
+a) constant PI
+b) sine,cosine
+c) max and min
+
+5) Naming data
+--------------
+a) val
+b) var
+c) type
+d) camelCase naming convention
+e) assignment operator, increment and decrement operators
+
+6) Type conversion
+-----------------
+a) double to int
+b) int to double
+
+7) Character set and codepoints
+
+8) Char and String
+----------------
+a) concatenation of strings and chars
+b) string templates
+c) multi-line strings
+
+9) Pairs and Triples
+
+10) Any,Unit and Nothing
+
+11) Comparison operators
+------------------------
+a) true,false
+b) equality, not,greater than,less than,>=,<=
+c) &&, || (boolean AND,OR)
+d) String equality
+e) if expression
+
+12) Range, until and downTo
+13) repeat loop
+14) for and while loops
+15) label in loops
+16) steps in loops
+17) continue,break
+18) when expressions
