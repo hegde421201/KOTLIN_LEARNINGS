@@ -27,6 +27,7 @@ fun main(){
 
     printMultiple(6)
 
+
 }
 
 fun printMultiple(value:Int){

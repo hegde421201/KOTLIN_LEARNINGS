@@ -7,7 +7,7 @@ c) Nested comments
 2) println statement
 
 3) Arithmetic operators
-----------------------
+-----------------------------
 a) Math operators and expressions
 b) Decimals and integers
 c) Modulo operator
@@ -41,7 +41,7 @@ a) concatenation of strings and chars
 b) string templates
 c) multi-line strings
 
-9) Pairs and Triples
+9) Pairs and Triples and varargs
 
 10) Any,Unit and Nothing
 
@@ -60,3 +60,13 @@ e) if expression
 16) steps in loops
 17) continue,break
 18) when expressions
+19) try-catch block
+
+20) Nullability
+21) Nullability arithmetic
+22) Arraylist and Strings
+23) Hashmap and Set
+24) Lambda Expressions
+
+
+
