@@ -1,5 +1,7 @@
 package basics
 
+import kotlin.math.max
+
 fun main() {
 
     //calculate factorial of integer
@@ -9,10 +11,154 @@ fun main() {
     // 3! = 3 x 2 x 1
     // 2! = 2 X 1
 
-   testing2()
+   testing5()
+
+}
+
+fun testing5() {
+
+    var array2D : Array<IntArray> = arrayOf(intArrayOf(1,2,3,4), intArrayOf(3,2,1,5))
+    println(maximumWealth(array2D))
+}
+
+fun maximumWealth(accounts: Array<IntArray>): Int {
+
+  var maxima = Int.MIN_VALUE
+
+  for(row in  accounts.indices)
+  {
+      var sum = 0
+      for(col in accounts[row].indices)
+          sum += accounts[row][col]
+
+      if(sum > maxima) maxima = sum
+  }
+
+    return maxima
+}
 
 
+fun testing4() {
+    var nums = arrayOf(1,3,2,1)
+    getConcatenation(nums.toIntArray())
 
+}
+
+fun getConcatenation(nums: IntArray): IntArray {
+
+    var answer = Array(nums.size * 2,{0}) //create an array of size double that of nums and set default values to 0 for all values
+
+    for(index in nums.indices){
+        answer[index] = nums[index]
+        answer[index + nums.size] = nums[index]
+        print("\t ${nums[index]}")
+    }
+
+    println()
+
+    for (index in answer.indices)
+        print("\t ${answer[index]}")
+
+
+return answer.toIntArray()
+}
+
+fun testing3() {
+
+    var nums = arrayOf(3,1,2,10,1)
+
+    runningSum(nums.toIntArray())
+
+
+}
+
+/*
+You are given an m x n integer grid accounts where accounts[i][j] is the amount of money the ith customer has in the jth bank. Return the wealth that the richest customer has.
+A customer's wealth is the amount of money they have in all their bank accounts. The richest customer is the customer that has the maximum wealth.
+
+Example 1:
+
+Input: accounts = [[1,2,3],[3,2,1]]
+Output: 6
+Explanation:
+1st customer has wealth = 1 + 2 + 3 = 6
+2nd customer has wealth = 3 + 2 + 1 = 6
+Both customers are considered the richest with a wealth of 6 each, so return 6.
+    x   Example 2:
+
+Input: accounts = [[1,5],[7,3],[3,5]]
+Output: 10
+Explanation:
+1st customer has wealth = 6
+2nd customer has wealth = 10
+3rd customer has wealth = 8
+The 2nd customer is the richest with a wealth of 10.
+Example 3:
+
+Input: accounts = [[2,8,7],[7,1,3],[1,9,5]]
+Output: 17
+* */
+
+/*
+Given an integer array nums of length n, you want to create an array ans of length 2n where ans[i] == nums[i] and ans[i + n] == nums[i] for 0 <= i < n (0-indexed).
+Specifically, ans is the concatenation of two nums arrays.
+Return the array ans.
+
+Example 1:
+
+Input: nums = [1,2,1]
+Output: [1,2,1,1,2,1]
+Explanation: The array ans is formed as follows:
+- ans = [nums[0],nums[1],nums[2],nums[0],nums[1],nums[2]]
+- ans = [1,2,1,1,2,1]
+Example 2:
+
+Input: nums = [1,3,2,1]
+Output: [1,3,2,1,1,3,2,1]
+Explanation: The array ans is formed as follows:
+- ans = [nums[0],nums[1],nums[2],nums[3],nums[0],nums[1],nums[2],nums[3]]
+- ans = [1,3,2,1,1,3,2,1]
+* */
+
+
+/*
+Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
+Return the running sum of nums.
+
+Example 1:
+
+Input: nums = [1,2,3,4]
+Output: [1,3,6,10]
+Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].
+Example 2:
+
+Input: nums = [1,1,1,1,1]
+Output: [1,2,3,4,5]
+Explanation: Running sum is obtained as follows: [1, 1+1, 1+1+1, 1+1+1+1, 1+1+1+1+1].
+Example 3:
+
+Input: nums = [3,1,2,10,1]
+Output: [3,4,6,16,17]
+
+
+* */
+
+fun runningSum(nums: IntArray): IntArray {
+
+    nums.forEach { print(it)
+        print("\t")
+    }
+
+  println()
+  for(index in 1 until nums.size)  {
+      nums[index] = nums[index] + nums[index - 1]
+  }
+
+  nums.forEach { print(it)
+  print("\t")
+  }
+
+    return nums
 }
 
 fun testing2() {
