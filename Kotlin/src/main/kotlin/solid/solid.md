@@ -27,4 +27,6 @@ on different responsibilities and put each of these small parts into separate cl
 The next question is, what do we mean by responsibility? In simple words, responsibility is a reason for a change.
 
 We have a Customer class to discuss SRP.
-This class can be found [Here]()
+This class can be found [Here](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/srp/)
+
+
