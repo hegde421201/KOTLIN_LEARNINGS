@@ -7,8 +7,8 @@ SOLID PRINCIPLES
 * Interface Segregation Principle (ISP)
 * Dependency Inversion Principle (DIP)
 
-Single Responsibility Principle
---------------------------------
+Single Responsibility Principle (SRP)
+------------------------------------
 A class is a box that can hold things like data, properties, or methods. 
 If you put in too much data or methods that are not related to each other, 
 you will end up with a bulky class that can create problems in the future during enhancements.
@@ -27,6 +27,9 @@ on different responsibilities and put each of these small parts into separate cl
 The next question is, what do we mean by responsibility? In simple words, responsibility is a reason for a change.
 
 We have a Customer class to discuss SRP.
-This class can be found [Here](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/srp/)
+This class can be found [here](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/srp/)
+The Customer class that follows SRP is available [here](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/srp/)
 
 
+Open/Closed Principle (OCP)
+---------------------------
