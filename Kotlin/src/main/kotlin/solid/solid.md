@@ -27,7 +27,7 @@ on different responsibilities and put each of these small parts into separate cl
 The next question is, what do we mean by responsibility? In simple words, responsibility is a reason for a change.
 
 We have a Customer class to discuss SRP.
-This class can be found [here](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/srp/)
+This class can be found [here](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/srp/)<br>
 The Customer class that follows SRP is available [here](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/srp/)
 
 Note that the SRP does not say that a class should have at most one method.
