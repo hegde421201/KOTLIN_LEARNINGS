@@ -30,6 +30,9 @@ We have a Customer class to discuss SRP.
 This class can be found [here](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/srp/)
 The Customer class that follows SRP is available [here](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/srp/)
 
+Note that the SRP does not say that a class should have at most one method.
+Here the emphasis is on the single responsibility.
+There may be closely related methods that can help you to implement a responsibility.
 
 Open/Closed Principle (OCP)
 ---------------------------
