@@ -51,7 +51,7 @@ This assumes that the module has been given a well-defined, stable description (
 At the implementation level, closure for a module also implies that you may compile it, perhaps store it in a library, and make it available for others (its clients) to use.
 The need for modules to be closed and the need for them to remain open arise for different reasons.
 
-The idea behind this design philosophy is that in a stable and working application, once you create a class and other parts of your application start using it, 
+The idea behind this design philosophy is that in a stable and working application, once we create a class and other parts of our application start using it, 
 any further change in the class can cause the working application to break.
 If we require new functionalities, instead of changing the existing class, we can extend it to adopt the new requirements. 
 
@@ -65,7 +65,11 @@ These protocols are closed for modification, and they provide another level of a
 To illustrate OCP we have a Student class that does not have OCP and then we develop a BetterStudent class that adheres to the OCP.
 [Student](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/ocp/)<br>
 [BetterStudent](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/ocp/)<br>
-[Final OCP](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/ocp/)<br>
+[Final OCP - StudentOCP](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/ocp/)<br>
 
+Liskov Substitution Principle (LSP)
+------------------------------------
+
+See the class Payments.kt [here](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/lsp/)
 
 
