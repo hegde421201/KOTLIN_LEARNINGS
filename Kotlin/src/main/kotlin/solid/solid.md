@@ -36,3 +36,34 @@ There may be closely related methods that can help you to implement a responsibi
 
 Open/Closed Principle (OCP)
 ---------------------------
+According to its definition - A software artifact should be open for extension but closed for modification.
+
+We will discuss the OCP principle using Kotlin classes.
+
+Any modular decomposition technique must satisfy the Open-Closed Principle. Modules should be both open and closed.
+The contradiction between the two terms is apparent as they correspond to end results of a different nature.
+
+A module is said to be open if it is still available for extension. 
+For example, the module should be able to expand its set of operations or add fields to its data structures.
+
+A module is said to be closed if it is available for use by other modules. 
+This assumes that the module has been given a well-defined, stable description (its interface in the sense of information hiding). 
+At the implementation level, closure for a module also implies that you may compile it, perhaps store it in a library, and make it available for others (its clients) to use.
+The need for modules to be closed and the need for them to remain open arise for different reasons.
+
+The idea behind this design philosophy is that in a stable and working application, once you create a class and other parts of your application start using it, 
+any further change in the class can cause the working application to break.
+If we require new functionalities, instead of changing the existing class, we can extend it to adopt the new requirements. 
+
+What is the benefit? Since we do not change the old code, our existing 
+functionalities continue to work without any problems, and we can avoid testing them again. Instead, we test the 'extended' part or functionalities only.
+
+If we use inheritance to satisfy the above requirement then it introduces tight coupling. To mitigate this issue, we use the concept of polymorphic OCP.
+The new proposal uses abstract base classes that use the protocols instead of a superclass to allow different implementations. 
+These protocols are closed for modification, and they provide another level of abstraction that enables loose coupling.
+
+To illustrate OCP we have a Student class that does not have OCP and then we develop a BetterStudent class that adheres to the OCP.
+[Student](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/ocp/)<br>
+[BetterStudent](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/ocp/)<br>
+
+
