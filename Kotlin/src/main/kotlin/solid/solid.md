@@ -70,6 +70,18 @@ To illustrate OCP we have a Student class that does not have OCP and then we dev
 Liskov Substitution Principle (LSP)
 ------------------------------------
 
-See the class Payments.kt [here](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/lsp/)
+See the class Payments.kt [here](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/lsp/)<br>
 
 
+Interface Segregation Principle (ISP)
+---------------------------------
+
+We often see an interface that contains many functions. A class that implements the interface may not need all these functions. 
+So why does the interface contain all these methods? One possible answer is to support some of the implementing classes of this interface. 
+
+This is the area the Interface Segregation Principle focuses on. 
+It suggests that you don't pollute an interface with the unnecessary methods only to support one (or some) of the implementing classes of this interface. 
+The idea is that a client should not depend on a method that it does not use.
+A client means any class that uses another class (or interface).
+
+Check out the Printer.kt class [here](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/isp/)

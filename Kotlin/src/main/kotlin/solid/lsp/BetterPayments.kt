@@ -84,7 +84,7 @@ fun main(){
 
 class GuestUserPayment2 : NewPayments{
     override fun newPayment() {
-        System.out.println("Processing guest user");
+        println("Processing guest user");
     }
 
 }
