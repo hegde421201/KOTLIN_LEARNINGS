@@ -84,4 +84,25 @@ It suggests that you don't pollute an interface with the unnecessary methods onl
 The idea is that a client should not depend on a method that it does not use.
 A client means any class that uses another class (or interface).
 
-Check out the Printer.kt class [here](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/isp/)
+Check out the Printer.kt class [here](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/isp/)<br>
+
+Dependency Inversion Principle (DIP)
+-------------------------------
+
+The DIP includes two essential features:
+
+1) A high-level concrete class should not be dependent on a low-level concrete class. Instead, both should depend on abstractions.
+2) Abstractions should not be dependent upon details. Instead, the details should depend upon abstractions.
+
+The explanation for the first point is straight forward. 
+If the low-level class changes, the high-level class needs to adjust to the change or else the application breaks.
+
+It means we should avoid creating a concrete low-level class inside a high-level class. 
+Instead, you should use abstract classes or interfaces. As a result, we remove the tight coupling between the classes.
+
+The second point is also simple - revise the ISP examples again. 
+We saw that if an interface needs to change to support one of its clients (classes), other clients can be impacted due to the change. 
+No client likes to see such an application.
+Thus,If high-level modules are independent of low-level modules, we can reuse them.
+
+Check out the example [here](https://github.com/hegde421201/KOTLIN_LEARNINGS/tree/main/Kotlin/src/main/kotlin/solid/dip/)<br>
