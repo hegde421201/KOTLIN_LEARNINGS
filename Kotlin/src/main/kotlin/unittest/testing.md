@@ -17,8 +17,8 @@ Junit test validates expected result with actual output from the code under test
 Thus based on assertions success or failure it provides feedback to the programmer.
 
 
-| Topic covered | Link         | 
-|---------------|--------------|
-| First Sample  | [Click me]() |
+| Topic covered | Link                                                                                                                 | 
+|---------------|----------------------------------------------------------------------------------------------------------------------|
+| First Sample  | [Click me](https://github.com/hegde421201/KOTLIN_LEARNINGS/blob/main/Kotlin/src/test/kotlin/unittest/SampleTest.kt/) |
 |||
 |||
