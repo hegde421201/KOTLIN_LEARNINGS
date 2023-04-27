@@ -40,4 +40,4 @@ Please follow this [link](https://github.com/hegde421201/KOTLIN_LEARNINGS/blob/m
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | First Sample     | [Click me](https://github.com/hegde421201/KOTLIN_LEARNINGS/blob/main/Kotlin/src/test/kotlin/unittest/SampleTest.kt/)                  |
 | @Test Annotation | [Click me](https://github.com/hegde421201/KOTLIN_LEARNINGS/blob/main/Kotlin/src/test/kotlin/unittest/SampleTest.kt/)                  |
-| Assertions       | [Click me](https://github.com/hegde421201/KOTLIN_LEARNINGS/blob/main/Kotlin/src/test/kotlin/unittest/assertions/AssertTrueSample.kt/) |
+| AssertTrue       | [Click me](https://github.com/hegde421201/KOTLIN_LEARNINGS/blob/main/Kotlin/src/test/kotlin/unittest/assertions/AssertTrueSample.kt/) |
