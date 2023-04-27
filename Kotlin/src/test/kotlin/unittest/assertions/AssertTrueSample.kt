@@ -79,7 +79,7 @@ class AssertTrueSample {
 
         bookService.addBook(bookKotlinTuts)
 
-        //Supplier<String> defined here
+        //Supplier<Boolean> defined here
         val supplierLambdaBoolean : () -> Boolean = { listBooks.isEmpty() }
 
 
@@ -100,7 +100,7 @@ class AssertTrueSample {
 
         bookService.addBook(bookKotlinTuts)
 
-        //Supplier<String> defined here
+        //Supplier<Boolean> defined here
         val supplierLambdaBoolean : () -> Boolean = { listBooks.isEmpty() }
 
 
