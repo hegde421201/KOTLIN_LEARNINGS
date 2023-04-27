@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="unittest.SampleTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-04-27T15:08:11" hostname="LM0002139" time="0.022">
+<testsuite name="unittest.assertions.AssertTrueSample" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-04-27T16:56:01" hostname="LM0002139" time="0.013">
   <properties/>
-  <testcase name="testSum()" classname="unittest.SampleTest" time="0.022">
-    <failure message="org.opentest4j.AssertionFailedError: Assertion failed" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Assertion failed
-	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:43)
-	at app//org.junit.jupiter.api.Assertions.fail(Assertions.java:129)
-	at app//org.junit.jupiter.api.AssertionsKt.fail(Assertions.kt:26)
-	at app//org.junit.jupiter.api.AssertionsKt.fail$default(Assertions.kt:25)
-	at app//unittest.SampleTest.testSum(SampleTest.kt:17)
+  <testcase name="assertTrueWithNoMessage()" classname="unittest.assertions.AssertTrueSample" time="0.013">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;
+	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
+	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:35)
+	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
+	at app//unittest.assertions.AssertTrueSample.assertTrueWithNoMessage(AssertTrueSample.kt:24)
 	at java.base@17.0.4.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@17.0.4.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base@17.0.4.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

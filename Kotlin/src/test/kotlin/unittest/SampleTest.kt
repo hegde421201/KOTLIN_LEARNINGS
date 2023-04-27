@@ -14,6 +14,10 @@ internal class SampleTest {
     fun testSum() {
         val expected = 49
         assertEquals(expected, testSample.sum(47, 2))
-      //  fail("Assertion failed")
+
+
     }
 }
+
+//@Test annotation is used to mark the methods for testing. It is present in the package org.junit.jupiter.api
+//The above annotated function can be private or protected also
