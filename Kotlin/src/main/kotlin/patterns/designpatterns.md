@@ -15,4 +15,4 @@ The controller is placed between the view and model in such a way that they can 
 This model separates the mechanism of how the data is displayed from the mechanism of how the data will be manipulated.
 The diagram below shows a typical MVC pattern.
 
-[MVC](https://github.com/hegde421201/KOTLIN_LEARNINGS/blob/main/Kotlin/src/main/kotlin/patterns/mvc/mvc.png)
+[MVC](https://github.com/hegde421201/KOTLIN_LEARNINGS/blob/main/Kotlin/src/main/kotlin/patterns/mvc/mvc.png/)
