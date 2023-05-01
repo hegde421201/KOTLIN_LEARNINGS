@@ -39,6 +39,14 @@ Real life examples :
    As soon as their interest in the celebrity wanes, they unfollow him (her).
    Here the fans are the observers and the celebrity is a subject.
 
+Example:
+------
+
+Please check the file Observers.kt for a Kotlin implementation.
+
+
+
+
 
 Model View Controller (MVC) pattern
 ------------------------------------
