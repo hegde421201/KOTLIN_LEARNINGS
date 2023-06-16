@@ -14,6 +14,8 @@ repositories {
 dependencies {
     // Other dependencies.
     testImplementation(kotlin("test"))
+    implementation("io.reactivex.rxjava3:rxkotlin:3.0.1")
+
 }
 
 tasks.withType<KotlinCompile>() {
