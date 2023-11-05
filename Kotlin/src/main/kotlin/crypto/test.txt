@@ -1,0 +1,66 @@
+ let temp1 = '=';
+  temp1 += key.join('');
+  console.log(temp1);
+  let test = temp1.split('').reverse().join('');
+
+  console.log(test);
+
+  let temp = atob(test);
+
+  console.log(temp);
+
+  temp = temp.split('').reverse().join('');
+  let diff = atob(temp);
+  console.log(diff);
+  diff = diff.split(',');
+
+  console.log(diff);
+
+  console.log(diff[3]);
+
+  let ivParam = new TextEncoder().encode(atob(diff[3]));
+
+  console.log(ivParam);
+
+  //Generate Secret Key
+
+  const password = CryptoJS.enc.Utf8.parse(atob(diff[4]).split(''));
+  console.log('Password: ', password);
+
+  const salt = new TextEncoder().encode(atob(diff[2]));
+  console.log('Salt: ', salt);
+
+  let i = 16;
+  const iterations = i * i;
+  const keySize = (i * i) / 2;
+
+  //var key1 = CryptoJS.PBKDF2(password, salt);
+  var key2 = CryptoJS.PBKDF2(password, CryptoJS.enc.Utf8.parse(salt), {
+    keySize: keySize,
+  });
+  var key3 = CryptoJS.PBKDF2(password, CryptoJS.enc.Utf8.parse(salt), {
+    keySize: 8,
+    iterations: 1000,
+  });
+  console.log('key1', key2);
+
+  const keyspec = CryptoJS.PBKDF2(password, CryptoJS.enc.Utf8.parse(salt), {
+    keySize,
+    iterations,
+    hasher: CryptoJS.algo.SHA256,
+  });
+  console.log('keyspec: ', keyspec);
+  const secretKey = keyspec.toString(CryptoJS.enc.Hex);
+  console.log('secretKey: ', secretKey);
+
+  return 'encrypted ' + data;
+
+
+==QP9EVTrp0MiNjQwMmeGdUVs0TPBpUNnpnTyUFROpXSU1UQ4dVYxpESKxSPRhVTB5kRkhXQwUFLxEESTNWYthEa0l2VyYERLJEUscmbpRGZhBVNTN0SQ9yQCN0LTVUQ
+==QP9EVTrp0MiNjQwMmeGdUVs0TPBpUNnpnTyUFROpXSU1UQ4dVYxpESKxSPRhVTB5kRkhXQwUFLxEESTNWYthEa0l2VyYERLJEUscmbpRGZhBVNTN0SQ9yQCN0LTVUQ
+
+["AES/CBC/PKCS5Padding", "PBKDF2WithHmacSHA1", "U0AxdFNAMXQ=", "JHJqaWxAMTIzNDU2Nzg5JA==", "UGFzc0B3b3JkMQ=="]
+["AES/CBC/PKCS5Padding", "PBKDF2WithHmacSHA1", "U0AxdFNAMXQ=", "JHJqaWxAMTIzNDU2Nzg5JA==", "UGFzc0B3b3JkMQ=="]
+
+
+

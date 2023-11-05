@@ -15,7 +15,8 @@ dependencies {
     // Other dependencies.
     testImplementation(kotlin("test"))
     implementation("io.reactivex.rxjava3:rxkotlin:3.0.1")
-
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
 }
 
 tasks.withType<KotlinCompile>() {
